@@ -1,0 +1,140 @@
+<?= $this->extend('layout/template'); ?>
+<?= $this->section('content'); ?>
+
+
+<header class="bg-gradient-to-t from-gray-50 via-green-600 to-green-800 rounded-b-2xl text-white flex justify-center relative z-0 py-80">
+   <div class="flex items-center justify-center">
+      <!-- Gambar utama muncul dari bawah -->
+      <div id="heroImage" class="absolute z-10 top-12 pt-20 opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+         <img src="<?= base_url('img/imghero.svg'); ?>" class="px-20" alt="Hero Image">
+      </div>
+      <!-- Title muncul dengan efek fade-in -->
+      <div id="heroTitle" class="z-0 absolute -top-12 pt-20 w-full flex justify-center opacity-0 transition-opacity duration-1000 delay-700">
+         <img src="<?= base_url('img/title_hero.svg'); ?>" class="px-20" alt="Title Hero">
+      </div>
+   </div>
+</header>
+
+
+<section class="flex justify-center">
+   <div id="statsSection" class="z-20 absolute top-96 pt-32 px-56 w-full transition-all duration-500 ease-out">
+      <div class="stats shadow rounded-full text-xs glass opacity-90 text-green-900 bg-amber-400 w-full">
+         <div class="stat place-items-center">
+            <div class="stat-title">Downloads</div>
+            <div class="stat-value">31K</div>
+            <div class="stat-desc">From January 1st to February 1st</div>
+         </div>
+
+         <div class="stat place-items-center">
+            <div class="stat-title">Users</div>
+            <div class="stat-value">4,200</div>
+            <div class="stat-desc">↗︎ 40 (2%)</div>
+         </div>
+
+         <div class="stat place-items-center">
+            <div class="stat-title">New Registers</div>
+            <div class="stat-value">1,200</div>
+            <div class="stat-desc">↘︎ 90 (14%)</div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Liturgi Section -->
+<section id="liturgi" class="mx-auto text-center my-20 scroll-mt-20 px-32">
+   <div class="content opacity-0 translate-y-10 transition-all duration-1000 ease-out flex-row space-y-4">
+      <h2 class="text-5xl mt-24 font-bold text-green-900">LITURGI & WARTA PELAYANAN</h2>
+      <h2 class="text-xl text-gray-600 font-medium">Minggu, 20 Juni 2030</h2>
+      <p class="text-gray-700 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ut, dolores labore eaque velit, nihil quos perspiciatis dicta doloremque, natus repellendus. Sint voluptas molestias aut blanditiis, esse labore pariatur qui.
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ut, dolores labore eaque velit, nihil quos perspiciatis dicta doloremque, natus repellendus. Sint voluptas molestias aut blanditiis, esse labore pariatur qui.
+      </p>
+      <a href="#" class="mt-3 inline-block bg-green-700 text-white px-6 py-3 rounded-full hover:bg-green-500 "><i class="ri-book-open-fill"></i> Baca </a>
+   </div>
+</section>
+
+<!-- Info Section -->
+<section id="info" class="mx-auto my-20 px-32 bg-gray-100 scroll-mt-16">
+   <div class="py-8 rounded-lg flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2 content opacity-0 translate-y-10 transition-all duration-500 ease-out">
+         <p class="text-8xl -ml-1.5 font-semibold text-green-800">INFO</p>
+         <p class="text-xl font-medium text-green-700"><i class="ri-information-2-fill"></i>Permandian</p>
+         <p class="text-gray-600 mt-2">Minggu, 20 Juni 2030</p>
+         <p class="mt-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit eaque nihil sit excepturi? Deleniti rerum quia, eveniet perspiciatis totam tempore quidem, quos laborum mollitia recusandae, voluptatibus obcaecati dolor earum?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit eaque nihil sit excepturi? Deleniti rerum quia, eveniet perspiciatis totam tempore quidem, quos laborum mollitia recusandae, voluptatibus obcaecati dolor earum?
+         </p>
+      </div>
+      <div class="md:w-1/2 flex-row justify-center space-y-3 content opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+         <img src="<?= base_url('img/PIC2.jpg'); ?>" class="rounded-xl lg:max-h-64 min-w-56 w-full object-cover shadow-2xl" alt="Baptisan">
+         <a href="#" class="w-full inline-block bg-green-700 text-white text-center px-6 py-3 rounded-full hover:bg-green-800 group transition-all duration-300">
+            Lihat <i class="ri-arrow-right-line inline-block transform transition-transform duration-300 group-hover:translate-x-1.5"></i>
+         </a>
+      </div>
+   </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="mx-auto text-center my-20 px-32 scroll-mt-20">
+
+   <div class="flex flex-wrap-reverse justify-between gap-3 pb-8">
+      <div class="border-4 border-green-800 rounded-full flex flex-grow"></div>
+      <div class="">
+         <h2 class="text-8xl font-semibold text-green-800 content opacity-0 translate-y-10 transition-all duration-1000 ease-out">ABOUT</h2>
+      </div>
+   </div>
+
+
+   <div class="flex-row justify-center ">
+      <div class="w-full flex items-center content opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+         <img src="<?= base_url('img/pic_about.svg'); ?>" class="w-full object-cover shadow-neutral-500 shadow-xl lg:max-h-64 rounded-lg" alt="Gereja">
+      </div>
+      <div class="flex-row justify-center space-y-1 mt-10 content opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+         <h2 class="font-semibold text-green-900">GEREJA MASEHI INJIL DI TIMOR</h2>
+         <h2 id="title-abt" class=" text-7xl font-bold text-green-900">ORA ET LABORA</h2>
+         <h2 class=" text-xl font-semibold text-green-900">OESAPA</h2>
+      </div>
+
+      <p class="mt-8 text-gray-700 text-justify content opacity-0 translate-y-10 transition-all duration-1000 ease-out">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit eaque nihil sit excepturi? Deleniti rerum quia, eveniet perspiciatis totam tempore quidem, quos laborum mollitia recusandae, voluptatibus obcaecati dolor earum?
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit eaque nihil sit excepturi? Deleniti rerum quia, eveniet perspiciatis totam tempore quidem, quos laborum mollitia recusandae, voluptatibus obcaecati dolor earum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit eaque nihil sit excepturi? Deleniti rerum quia, eveniet perspiciatis totam tempore quidem, quos laborum mollitia recusandae, voluptatibus obcaecati dolor earum?
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit eaque nihil sit excepturi? Deleniti rerum quia, eveniet perspiciatis totam tempore quidem, quos laborum mollitia recusandae, voluptatibus obcaecati dolor earum?</p>
+   </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-100 px-32 py-16 rounded-t-3xl">
+   <!-- <h2 class="text-2xl font-bold pb-10 text-green-900 lg:px-48">TERHUBUNG BERSAMA KAMI</h2> -->
+   <div class="flex flex-wrap justify-between gap-8 text-green-900">
+      <div class="">
+         <div class="container mx-auto text-start ">
+            <p class="font-bold text-lg">GMIT ORA ET LABORA OESAPA</p>
+            <p class="mt-2 text-xs"><i class="ri-map-pin-fill"></i> Jl. Tidar, Oesapa, Kec. Klp. Lima, Kota Kupang, Nusa Tenggara Tim. 85228</p>
+            <p class="mt-2 text-xs"><i class="ri-smartphone-fill"></i> 082xxxxxxx</p>
+            <p class="mt-2 text-xs"><i class="ri-mail-fill"></i> gmitjoel@gmail.com</p>
+         </div>
+         <div class="container mx-auto text-start mt-8">
+            <p class="font-semibold mb-1">SOCIAL MEDIA</p>
+            <div class="flex space-x-2">
+               <a href="" class="btn btn-xs btn-ghost btn-circle btn-s hover:text-yellow-400"><i class="ri-tiktok-fill"></i></a>
+
+               <a href="" class="btn btn-xs btn-ghost btn-circle hover:text-yellow-400"><i class="ri-instagram-fill"></i></a>
+
+               <a href="" class="btn btn-xs btn-ghost btn-circle hover:text-yellow-400"><i class="ri-youtube-fill"></i></a>
+
+               <a href="" class="btn btn-xs btn-ghost btn-circle hover:text-yellow-400"><i class="ri-facebook-fill"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="flex-row">
+         <div class="container mx-auto text-start flex-row">
+            <p class="font-semibold">Developed by</p>
+            <p class="text-xs"><i class="ri-instagram-fill"></i> beta.igs</p>
+         </div>
+         <div class="container mx-auto text-start mt-8 ">
+            <p class="font-medium text-xs bg-green-900 py-2 px-6 rounded-full text-center text-white bg-darken">©UPPMULTIMEDIAJOEL2025</p>
+
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+<?= $this->endSection(); ?>
